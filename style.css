@@ -124,6 +124,8 @@ itemSubtitle */
     flex: 1;
 }
 
+
+
 /* Profile */
 .profile_container{
     display : flex;
@@ -292,4 +294,8 @@ hr{
 
 .C_item:hover{
     color: var(--primary-color);
+}
+
+.Project{
+    
 }
