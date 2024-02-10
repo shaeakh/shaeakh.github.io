@@ -282,3 +282,14 @@ hr{
     border: none;
     border-top: 2px solid grey;
 }
+
+.C_item{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.C_item:hover{
+    color: var(--primary-color);
+}
