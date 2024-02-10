@@ -10,7 +10,7 @@
 
 :root{
     --primary-color : #ff7613;
-    --text-color : #727171;
+    --text-color : #000000;
 
 }
 
@@ -20,8 +20,8 @@ html{
 
 body{
     font-family: Inter,sans-serif;
-    background-color: black;
-    color: white;    
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);    
 }
 
 /* common styles */
@@ -31,7 +31,7 @@ img{
 
 a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .Profiledescription{    
     font-size: 1.5rem;
@@ -41,7 +41,7 @@ a{
     
 }
 .title{
-    color: #ff7613;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;   
@@ -55,7 +55,7 @@ a{
 
 .itemTitle{
     font-size: 1.6rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 500;
     margin: 0.8rem 0;
 }
@@ -78,7 +78,7 @@ itemSubtitle */
     margin: 0 auto;
     display: grid;
     padding: 5rem;
-    background: #070707;
+    background: #ffffff;
     grid-template-columns: 1fr 1fr;
     gap: 4rm;
 }
@@ -144,7 +144,7 @@ itemSubtitle */
 }
 
 .lastname{
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 700;
     font-size: clamp(2rem,8vw,4rem);
     text-transform: uppercase;
@@ -285,8 +285,8 @@ hr{
 
 .C_item{
     font-size: 1.6rem;
-    color: white;
-    font-weight: 500;
+    color: black;
+    font-weight: 700;
     margin: 0.8rem 0;
 }
 
