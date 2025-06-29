@@ -1,324 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- title -->
-    <title>Shaeakh's Resume</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaeakh Ahmed Chowdhury - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
+      body {
+        font-family: "Latin Modern Roman", serif; /* Implemented LaTeX-like font */
+        background-color: #f9f9f9;
+        padding: 40px;
+        color: #000; /* All text color set to black */
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid #ddd;
+      }
+      h1,
+      h2 {
+        color: #000; /* Set headings to black */
+        margin-bottom: 5px;
+      }
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-top: 30px;
+      }
+      p,
+      li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      .icon {
+        color: #014f92; /* Set icon color to #014f92 */
+        margin-left: 5px; /* Spacing for the icon */
+      }
+      .hyperlinked-text {
+        color: #014f92;
+      }
+      .contact {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+      }
+      .contact a {
+        color: #014f92; /* Hyperlink text color remains #014f92 */
+        text-decoration: none;
+        margin: 0 10px;
+        display: inline-block; /* Allows margin to work correctly */
+      }
+      .contact a i {
+        margin-right: 5px;
+      }
+      .project,
+      .entry {
+        margin-bottom: 5px;
+      }
+      .project-title,
+      .entry-title {
+        font-weight: 600;
+        color: #000; /* Set project/entry titles to black */
+      }
+      .tools {
+        font-style: italic;
+        color: #000; /* Set tools text to black */
+        font-size: 0.9rem;
+      }
+      a.external-link-icon {
+        color: #014f92; /* Ensure external link icons match the link color */
+        margin-left: 5px; /* Spacing for the icon after text */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
+          padding: 20px; /* Reduce padding on smaller screens */
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ddd;
+          padding: 20px; /* Reduce container padding */
+          border-radius: 10px; /* Slightly smaller border-radius */
         }
-        .profile_container, .group1, .group2, .group3 {
-            margin-bottom: 20px;
-            background: #fff;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+        h1 {
+          font-size: 1.8rem; /* Slightly smaller heading on small screens */
         }
-        h1, h3 {
-            color: #222;
-            margin-bottom: 10px;
+        h2 {
+          margin-top: 25px; /* Adjust top margin for headings */
         }
-        .profilename {
-            font-size: 1.8em;
-            margin: 0;
+        p,
+        li {
+          font-size: 0.9rem; /* Slightly smaller body text */
         }
-        .profiletitle, .Profiledescription, .itemTitle, .itemSubtitle, .preTitle {
-            margin: 5px 0;
+        .contact a {
+          margin: 5px; /* Adjust spacing for contact links */
+          display: block; /* Stack contact links vertically */
+          width: fit-content; /* Adjust width to fit content */
+          margin-left: auto; /* Center individual links */
+          margin-right: auto; /* Center individual links */
         }
-        .skills_list, .socialItems, .interestItems {
-            list-style: none;
-            padding: 0;
+        .contact span.separator {
+          display: none; /* Hide the | separator when links are stacked */
         }
-        .skills_list li, .socialItem, .interestItem {
-            padding: 3px 0;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 15px;
         }
-        a {
-            color: #000;
-            text-decoration: underline;
+        .container {
+          padding: 15px;
         }
-        .HR {
-            border: 0;
-            height: 1px;
-            
-            background: #ccc;
-            margin: 20px 0;
+        h1 {
+          font-size: 1.5rem;
         }
-        @media print {
-            a {
-                color: #000;
-                text-decoration: none;
-            }
+        h2 {
+          font-size: 1.2rem;
         }
+        p,
+        li {
+          font-size: 0.85rem;
+        }
+        .contact a {
+          font-size: 0.8rem;
+        }
+      }
     </style>
-
-    <!-- script -->
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="profile">
-            <div class="profile_container">
-                <div class="ProfileImg">
-                    <img src="/assets/Shaeakh.jpg" alt="Shaeakh Ahmed Chowdhury">
-                </div>
-                <div class="profiletxt">
-                    <h1 class="profilename">
-                        <span class="firstname">Shaeakh</span>
-                        <span class="lastname">Ahmed Chowdhury</span>                        
-                    </h1>
-                    <p class="profiletitle">
-                        Student at Depertment of Software Engineering, SUST
-                    </p>
-                    <p class="Profiledescription">
-                        Hello there !                        
-                    </p>
-                    <p class="Profiledescription">
-                        I am a tech enthusiastic, who loves to play with computer
-                        and never miss any chance to learn more .
-                        Exploring the endless possibilities of technology is not just a hobby,
-                        it's a passion that fuels my curiosity and drive to innovate.    
-                    </p>
-                    
-                    <!-- <a href="./assets/CV.pdf" class="DownloadBtn" download="Shaeakh's Resume.pdf">Download Resume</a> -->
-                </div>
-            </div>
+      <h1>Shaeakh Ahmed Chowdhury</h1>
+      <div class="contact">
+        <a href="mailto:shaeakh12@gmail.com"
+          ><i class="fas fa-envelope"></i>shaeakh12@gmail.com</a
+        >
+        <span class="separator">|</span>
+        <a href="tel:+8801704567731"
+          ><i class="fas fa-phone"></i>01704 567731</a
+        >
+        <span class="separator">|</span>
+        <a href="https://yourwebsite.com/"
+          ><i class="fas fa-globe"></i>Portfolio</a
+        >
+        <span class="separator">|</span>
+        <a href="https://www.linkedin.com/in/shaeakh1/"
+          ><i class="fab fa-linkedin"></i>LinkedIn</a
+        >
+        <span class="separator">|</span>
+        <a href="https://github.com/shaeakh"
+          ><i class="fab fa-github"></i>GitHub</a
+        >
+      </div>
+
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-title">
+          Shahjalal University of Science and Technology
         </div>
-        <div class="group1">
-            <div class="education">
-                <h3 class="title">Education</h3>
-                <div class="eduItem">
-                    <p class="preTitle">2018-2020</p>
-                    <h4 class="itemTitle">HSC (Science)</h4>
-                    <p class="itemSubtitle">Abdul Kadir Mollah City College,Narsingdi</p>
-                </div>
-                <div class="eduItem">
-                    <p class="preTitle">2022-Present</p>
-                    <h4 class="itemTitle">BSc in Software Engineering</h4>
-                    <p class="itemSubtitle">Shahjalal University of Science and Technology</p>
-                </div>
-            </div>
-            <div class="skills">
-                <h3 class="title">expertise</h3>
-                <ul class="skills_list Profiledescription">
-                    <li>Competitive Programming</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Android App Development</li>
-                    <li>Frontend Development</li>    
-                    <li>Backend Development</li>                 
-                    <li>REST API</li>
-                    <li>Public API</li>
-                    <li>Database</li>                                      
-                </ul>
-            </div>
-            <div class="reference">
-                <h3 class="title">Programming Languages</h3>
-                <div class="reference_item">
-                    <ul class="skills_list Profiledescription">
-                        <li>C/C++</li>
-                        <li>JAVA</li>
-                        <li>Python</li>
-                        <li>Dart</li>                                                              
-                        <li>Javascript</li>
-                        <li>Typescript</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>                
-            </div>    
-            <div class="awards">
-                <h3 class="title">achievements</h3>
-                <div class="awardsItem">
-                    <p class="preTitle">2024</p>
-                    <h4 class="itemTitle"><a href="https://github.com/shaeakh/sust_oracle">TechStorm Hackathon , LUCC 2024</a></h4>                    
-                    <p class="Profiledescription">
-                        We took part in the TechStorm Hackathon , LUCC 2024 and won the 2nd runners-up.
-                    </p>
-                </div>
-                <div class="awardsItem">
-                    <p class="preTitle">2023</p>
-                    <h4 class="itemTitle"><a href="https://github.com/shaeakh/kibo_sample_apk">Kibo Robot Programming Challange 2023</a></h4>                    
-                    <p class="Profiledescription">
-                        It was my honor to hold rank 11th in the national round Kibo Robot Programming Challange 2023.
-                        We build several apps to move and execute astro-bees in the space. 
-                    </p>
-                </div>
-                <div class="awardsItem">
-                    <p class="preTitle">2023</p>
-                    <h4 class="itemTitle"><a href="https://drive.google.com/file/d/1rFCZ1IReNFRGb1KSdxrpLdIAdkWxrTfb/view?usp=drive_link">Nasa Space Apps Challange 2023</a></h4>       
-                    <p class="Profiledescription">
-                        It was my honor to hold rank 2nd in the regional round Nasa Space Apps Challange 2023.
-                        We worked to solve the wildfire issues. And that was a boom ! 
-                    </p>
-                </div>                                
-            </div>                              
+        <div>BSc in Software Engineering (March 2022 – Present)</div>
+        <ul>
+          <li>CGPA: 3.55/4.0</li>
+          <li>
+            <strong>Coursework:</strong> OOP, DSA, Computer Networking,
+            Architecture, Distributed System, Operating System, AI, ML, etc.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Algorithmic Problem Solving</h2>
+      <ul>
+        <li>
+          Solved <strong>250+ problems</strong> on
+          <a
+            href="https://codeforces.com/profile/hay-maker"
+            class="hyperlinked-text"
+            >Codeforces<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
+          (Max rating: 944)
+        </li>
+        <li>
+          Practiced on
+          <a href="https://vjudge.net/user/shaeakh" class="hyperlinked-text"
+            >VJudge<i class="fas fa-external-link-alt external-link-icon"></i
+          ></a>
+          and
+          <a
+            href="https://www.hackerrank.com/profile/shaeakh12"
+            class="hyperlinked-text"
+            >HackerRank<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
+        </li>
+      </ul>
+
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="project-title">
+          <a
+            href="https://github.com/nafi-ullah/swe-society-site"
+            class="hyperlinked-text"
+            >SWE Society Site<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
         </div>
-        <div class="group2">
-            <div class="certification">
-                <h3 class="title">certification</h3>
+        <ul>
+          <li>
+            Developed a society website with voting system, admin panel, and
+            dynamic member showcase.
+          </li>
+          <li class="tools">
+            Tools Used: Next.js, Express.js, PostgreSQL, Tailwind CSS.
+          </li>
+        </ul>
+      </div>
 
-                <div class="certificationItem">
-                    <p class="preTitle">2022</p>
-                    <h4 class="itemTitle"> <a href="https://drive.google.com/file/d/1hODLl8AP46cvWgIJwmzr2ohOohK1Frre/view?usp=drive_link" class="C_item" target="_blank">ICPC 2022</a></h4>
-                    <p class="Profiledescription">
-                        It was my first ICPC contest. Learned a lot from there !
-                    </p>
-                </div>
-
-                <div class="certificationItem">
-                    <p class="preTitle">2022</p>
-                    <h4 class="itemTitle"> <a href="https://drive.google.com/file/d/1brM5Yhm4dvWsFR9SC3Uh2uJRxNDAccEi/view?usp=drive_link" class="C_item" target="_blank">Bengal AI : Data Annotation</a></h4>
-                    <p class="Profiledescription">
-                        I was so excited learning how the AI works ! I annotated a bunch of data and trained the system. It was a great journey though.
-                    </p>
-                </div>
-
-                <div class="certificationItem">
-                    <p class="preTitle">2023</p>
-                    <h4 class="itemTitle"> <a href="https://drive.google.com/file/d/1L1eZ0b3EJqjp4bU_rgKAGx5pWYSmYQS_/view?usp=drive_link" class="C_item" target="_blank">Nasa Space Apps Challange 2023</a></h4>
-                    <p class="Profiledescription">
-                        The first hackathon in my life. It was 36 hour long competetion ! we also become the 2nd runners-up in the regional.
-                    </p>
-                </div>
-
-                <div class="certificationItem">
-                    <p class="preTitle">2023</p>
-                    <h4 class="itemTitle"> <a href="https://drive.google.com/file/d/1_4lpYHa96vvArCHkaHqQvULNy0DpVqqM/view?usp=drive_link" class="C_item" target="_blank">ICPC 2023</a></h4>
-                    <p class="Profiledescription">
-                        This was the second the ICPC in my life. And this journey was amazing. 
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="certification">
-                <h3 class="title">My Projects</h3>
-
-                
-                <div class="certificationItem">
-                    <p class="preTitle">2024</p>
-                    <h4 class="itemTitle"> <a href="https://youtube.com/playlist?list=PL-dWyZ8prR9U94IrRyULpZwKVsZff3HbD&si=J-pBFrKfS3a3Q-Tq" class="C_item" target="_blank">Hackerrank C++ Bootcamp in Bangla </a></h4>
-                    <p class="Profiledescription">
-                        In this bootcamp, I mentored students through a series of problems related to object-oriented programming (OOP) in C++. I provided detailed explanations and solutions to each problem in Bangla, helping students to better understand the concepts.
-                    </p>
-                    <p class="C_item">
-                        Source code Link : <a href="https://github.com/shaeakh/hackerRank_CPP_solution" class=" Profiledescription" target="_blank">Hackerrank C++ Bootcamp</a>
-                    </p>
-                </div>
-                <div class="certificationItem">
-                    <p class="preTitle">2024</p>
-                    <h4 class="itemTitle"> <a href="https://github.com/shaeakh/WebProject" class="C_item" target="_blank">Chol-Kheli : A Player Bidding Platform</a></h4>
-                    <p class="Profiledescription">
-                        This is a platform where people can organise any tournaments and players can bid for the tournaments. We provide several features and detailed information on realtime during the bidding so that your bidding experience becomes more enjoyable. 
-                    </p>
-                    <p class="C_item">
-                        Source code Link : <a href="https://github.com/shaeakh/WebProject" class=" Profiledescription" target="_blank">Chol-Kheli</a>
-                    </p>
-                </div>
-
-                <!-- pulsegen -->
-                <div class="certificationItem">
-                    <p class="preTitle">2024</p>
-                    <h4 class="itemTitle"> <a href="https://www.pulsegen.xyz/" class="C_item" target="_blank">Pulsegen : AI Consultant </a></h4>
-                    <p class="Profiledescription">
-                        Pulsegen offers several services including healthcare , online prescriptions, medicine delivery, and integrated tests and diagnostics. Our secure technology gives affordable access to healthcare for all.
-                    </p>
-                    <p class="C_item">
-                        Source code Link : <a href="https://github.com/shaeakh/tech_titans" class=" Profiledescription" target="_blank">Pulsegen</a>
-                    </p>
-                </div>
-                <!-- pulsegen -->
-
-                <!-- pulsegen -->
-
-                <!-- pulsegen -->
-                <div class="certificationItem">
-                    <p class="preTitle">2023</p>
-                    <h4 class="itemTitle"> <a href="https://github.com/shaeakh/android_app_project_bookhub" class="C_item" target="_blank">Android App : Bookhub</a></h4>
-                    <p class="Profiledescription">
-                        It was my project to build a community where people can exchange or sell their books for their own perpose. 
-                    </p>
-                </div>
-                
-            </div>                                                
+      <div class="project">
+        <div class="project-title">
+          <a
+            href="https://github.com/shaeakh/WebProject"
+            class="hyperlinked-text"
+            >Player Bidding System<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
         </div>
-        <hr class="HR" style="margin: 0 auto;">
-        <div class="group3">
-            <div class="contact">
-                <h3 class="title">Contact</h3>
-                <div class="socialItems">
-                    <p class="socialItem">
-                        Sylhet,Bangladesh
-                    </p>
-                    <p class="socialItem">
-                        01704567731
-                    </p>
-                    <p class="socialItem">
-                        shaeakh12@gmail.com
-                    </p>
-                </div>
-            </div>
-            <div class="socials">
-                <h3 class="title">Socials</h3>
-                <div class="socialItems">
-                    <a href="https://github.com/shaeakh" class="socialItem" target="_blank">
-                        <i data-feather="github"></i>
-                        <span>/shaeakh</span>
-                    </a>
-                    <a href="https://www.facebook.com/shaeakh4" class="socialItem" target="_blank">
-                        <i data-feather="facebook"></i>
-                        <span>/shaeakh4</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/shaeakh/" class="socialItem" target="_blank">
-                        <i data-feather="linkedin"></i>
-                        <span>/shaeakh</span>
-                    </a>
-                </div>
-            </div>
-            <div class="interest">
-                <h3 class="title">Interest</h3>
-                <div class="interestItems">
-                    <div class="interestItem">
-                        <i data-feather="code"></i>
-                        <span>Coding</span>
-                    </div>
-                    <div class="interestItem">
-                        <i data-feather="film"></i>
-                        <span>Movies</span>
-                    </div>
-                    <div class="interestItem">
-                        <i data-feather="book"></i>
-                        <span>Book</span>
-                    </div>
-                    <div class="interestItem">
-                        <i data-feather="map"></i>
-                        <span>Travel</span>
-                    </div>
-                    <div class="interestItem">
-                        <i data-feather="target"></i>
-                        <span>gamming</span>
-                    </div>
-                </div>
-            </div> 
-        </div>        
+        <ul>
+          <li>
+            Developed a web app for organizing cricket/football tournaments<br />with
+            real-time player bidding functionality.
+          </li>
+          <li class="tools">
+            Tools Used: Next.js, Express.js, PostgreSQL, Tailwind CSS.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <a
+            href="https://github.com/shaeakh/pdf_viewer"
+            class="hyperlinked-text"
+            >PDF Viewer App<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
+        </div>
+        <ul>
+          <li>
+            Upload PDFs and select text to get simplified explanations with
+            graphs and flowcharts.
+          </li>
+          <li class="tools">
+            Tools Used: Next.js, Express.js, PostgreSQL, OpenAI.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <a
+            href="https://github.com/shaeakh/tech_titans"
+            class="hyperlinked-text"
+            >PulseGen<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
+        </div>
+        <ul>
+          <li>
+            AI-powered telemedicine platform with symptom analysis, virtual
+            consultation, and educational videos.
+          </li>
+          <li class="tools">
+            Tools Used: Next.js, Express.js, MongoDB, OpenAI.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <a
+            href="https://github.com/shaeakh/android_app_project_bookhub"
+            class="hyperlinked-text"
+            >BookHub App<i
+              class="icon fas fa-external-link-alt external-link-icon"
+            ></i
+          ></a>
+        </div>
+        <ul>
+          <li>
+            Flutter app for buying/selling books with bid, rating, and
+            interaction features.
+          </li>
+          <li class="tools">Tools Used: Flutter, Firebase.</li>
+        </ul>
+      </div>
+
+      <h2>Technologies</h2>
+      <strong>Languages:</strong> C++, C, Python, Java, JavaScript, Dart, SQL
+      <br />
+      <strong>Frameworks & Libraries:</strong> MERN Stack, Flutter, FastAPI
+      <br />
+      <strong>Databases:</strong> MongoDB, PostgreSQL, MySQL
+
+      <h2>Achievements</h2>
+      <ul>
+        <li>
+          <strong
+            ><a
+              href="https://drive.google.com/file/d/1L1eZ0b3EJqjp4bU_rgKAGx5pWYSmYQS_/view?usp=drive_link"
+              class="hyperlinked-text"
+              >1st Runner-Up<i
+                class="icon fas fa-external-link-alt external-link-icon"
+              ></i></a
+          ></strong>
+          – NASA Space Apps Challenge 2023
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://drive.google.com/file/d/13AzlOTYm8M_gGSUiV5w4mYK7cVJoiOFU/view?usp=drive_link"
+              class="hyperlinked-text"
+              >2nd Runner-Up<i
+                class="icon fas fa-external-link-alt external-link-icon"
+              ></i></a
+          ></strong>
+          – LUCC Hackathon 2024
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://www.facebook.com/photo/?fbid=122115809990541658&set=pcb.1080842450312085"
+              class="hyperlinked-text"
+              >Top 20 Finalist<i
+                class="icon fas fa-external-link-alt external-link-icon"
+              ></i></a
+          ></strong>
+          – BUET CSE Fest Hackathon 2024
+        </li>
+      </ul>
     </div>
-    </div>
-    <script>
-        feather.replace();
-      </script>
-</body>
+  </body>
 </html>
